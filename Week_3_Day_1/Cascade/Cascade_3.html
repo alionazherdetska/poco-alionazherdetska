@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+        border: 1px solid rgb(0, 0, 0);
+      }
+      p.info {
+        background-color: rgba(0, 0, 255, 0.5);
+        text-decoration: underline;
+        padding: 1em;
+      }
+      p#tip {
+        color: black;
+        background-color: rgba(0, 255, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="tip" class="info">Here is a paragraph</p>
+  </body>
+</html>
+
+
+<!-- The <p> element has the ID "tip" and the class "info", so it inherits styles from both 
+p.info and p#tip.
+
+  Comparing the specificity:
+  
+  Rule p.info has one hit on the third level (class) and one hit on the fourth level (tag).
+  Rule p#tip has one hit on the second level (ID) and one hit on the fourth level (tag).
+  Since p#tip has higher specificity due to the ID selector, its styles override those from p.info.
+  
+  So, the <p> element with the ID "tip" and the class "info" will have the following styles:
+  
+  Color: black (from p#tip)
+  Background color: semi-transparent green (from p#tip)
+  Text decoration: underline (from p.info)
+  Padding: 1em (from p.info) -->

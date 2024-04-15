@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+      }
+      p.info {
+        background-color: rgba(0, 0, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="info">Here is a paragraph</p>
+  </body>
+</html>
+
+<!-- 
+The <p> element will have a blue background (rgba(0, 0, 255, 0.5)),
+because the second rule (p.info) is more specific. It has one hit 
+on the third level (class) and one on the fourth level (tag). 
+In contrast, the first rule (p) has only one hit on the fourth 
+level (tag), making it less specific.  -->
