@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sort Digits</title>
+</head>
+<body>
+  <label for="digits">Enter digits without commas:</label>
+  <input type="text" id="digits">
+  <button onclick="sortDigits()">Sort Digits</button>
+  <p id="sortedDigits"></p>
+
+  <script>
+    function sortDigits() {
+      const input = document.getElementById('digits').value.trim();
+      const digitsArray = input.split('').map(Number);
+      const sortedArray = digitsArray.sort((a, b) => a - b);
+
+      const sortedDigitsElement = document.getElementById('sortedDigits');
+      sortedDigitsElement.textContent = 'Sorted digits: ' + sortedArray.join(' ');
+    }
+  </script>
+</body>
+</html>

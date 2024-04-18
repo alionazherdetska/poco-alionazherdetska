@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Numbers</title>
+</head>
+<body>
+  <label for="numbers">Enter numbers separated by commas:</label>
+  <input type="text" id="numbers">
+  <button onclick="addNumbers()">Add Numbers</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    return sum;
+  }
+
+    function addNumbers() {
+      const input = document.getElementById('numbers').value.trim(); 
+      const numbersArray = input.split(',').map(Number); 
+
+      const sum = calculateSum(numbersArray);
+
+      const resultElement = document.getElementById('result');
+      resultElement.textContent = 'Sum: ' + sum;
+    }
+  </script>
+</body>
+</html>
