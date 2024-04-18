@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+}
