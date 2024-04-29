@@ -1,0 +1,6 @@
+1. Prompt for current age and retirement age.
+2. Calculate years left until retirement by subtracting current age from retirement age.
+3. If retirement age is less than current age, display error message and end.
+4. If retirement age equals current age, display congratulations message and end.
+5. Calculate retirement year by adding years left to the current year.
+6. Display years left until retirement and retirement year.

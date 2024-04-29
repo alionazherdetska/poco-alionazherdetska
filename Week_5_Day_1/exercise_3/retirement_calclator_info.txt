@@ -1,0 +1,20 @@
+Inputs:
+1. Current age(number).
+2. Retirement age(number).
+
+Outputs:
+1. Years left until retirement (number).
+2. Year to retire (number).
+
+Processes:
+1. Input current age and retirement age.
+2. Calculate years left until retirement.
+3. Determine retirement year.
+4. Display results.
+
+Edge Cases:
+1. If the current age is equal to the retirement age, the user can retire immediately.
+2. If the current age is greater than the retirement age, the program should indicate 
+that the user can retire.
+3. If the user enters non-numeric inputs or negative values, the program should handle 
+the error appropriately.
